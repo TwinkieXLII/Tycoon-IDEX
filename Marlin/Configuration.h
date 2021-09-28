@@ -1049,7 +1049,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -29, 0, -1.8 }
+#define NOZZLE_TO_PROBE_OFFSET { -29, 0, -2.8 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1770,10 +1770,10 @@
  * Attention: EXPERIMENTAL. G-code arguments may change.
  */
 //#define NOZZLE_CLEAN_FEATURE
-
+//TODO TWINKIEXLII
 #if ENABLED(NOZZLE_CLEAN_FEATURE)
   // Default number of pattern repetitions
-  #define NOZZLE_CLEAN_STROKES  12
+  #define NOZZLE_CLEAN_STROKES  3
 
   // Default number of triangles
   #define NOZZLE_CLEAN_TRIANGLES  3
@@ -1794,10 +1794,10 @@
   #define NOZZLE_CLEAN_GOBACK
 
   // For a purge/clean station that's always at the gantry height (thus no Z move)
-  //#define NOZZLE_CLEAN_NO_Z
+  #define NOZZLE_CLEAN_NO_Z
 
   // For a purge/clean station mounted on the X axis
-  //#define NOZZLE_CLEAN_NO_Y
+  #define NOZZLE_CLEAN_NO_Y
 
   // Require a minimum hotend temperature for cleaning
   #define NOZZLE_CLEAN_MIN_TEMP 170
